@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from "react-dom";
 import { choice, remove } from "./helpers";
 import foods from "./foods";
-import App from './App';
 
+let randomFruit = choice(foods);
 
-ReactDOM.render(
-    <App />,
-  document.getElementById('root')
-);
+console.log(`I'd like one ${randomFruit}, please`);
+console.log(`Here you go: ${randomFruit}`);
+console.log("Delicious! May I have another?");
 
+let remaining = remove(foods, randomFruit);
+
+console.log(`I'm sorry, we're all out. We have ${remaining.length} left.`);
