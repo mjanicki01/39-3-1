@@ -7,6 +7,6 @@ console.log(`I'd like one ${randomFruit}, please`);
 console.log(`Here you go: ${randomFruit}`);
 console.log("Delicious! May I have another?");
 
-let remaining = remove(foods, randomFruit);
+remove(foods, randomFruit);
 
-console.log(`I'm sorry, we're all out. We have ${remaining.length} left.`);
+console.log(`I'm sorry, we're all out. We have ${foods.length} left.`);
